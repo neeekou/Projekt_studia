@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Logowanie dla panelu administratora</title>
+	<link rel ="stylesheet" href="{% static 'css/style.css' %}" type="text/css" />
+</head>
+
+<div class="container">
+	<form id="login" method="post"> {% csrf_token %}
+		<div class="header">
+			<h3>Zaloguj się</h3>
+			<p>Podaj swoje dane logowanie</p>
+		</div>
+		<div class="sep">
+		<div class="inputs">
+			<input name="email" placeholder="Adres e-mail" autofocus />
+			<input type="password" placeholder="Hasło" />
+			<div class="remember">
+				<input name="cecky" id="checke" value="1" type="checkbox" />
+				<label class="terms">Pamiętaj przez 14 dni </label>
+			</div>
+			<a id="submit" href="#">Zaloguj się do panelu</a>
+		</div>
+		<div class="butonss">
+		<br>
+		<a href="StronaGlowna"><button type="button"  onclick="alert('Logując się jako gość akceptujesz warunki regulaminu, możesz znaleźć go w zakłądce Regulamin!')">Zaloguj jako gość</button></a>
+		<a href="zakladanie_konta.html"><button type="button" onclick="alert('Abu utworzyć nowe konto wypełnij formularz!')" >Utwórz konto</button></a>
+			</div>
+		</div>	
+	</form>
+</div>
+
+</html>

@@ -1,0 +1,12 @@
+Załączona instrukcja opisuje sposób korzystania ze strony.
+
+Stroną startową dla projektu jest : Start.html
+Aby przejść do oglądania dalszej części strony proszę skorzystać z przycisku Zalogój jako gość.
+Opcja tworzenia konta i logowania zostały napisane lecz strona nie jest podpięta pod rzadną zewnętrzą bazę ani serwer i niestety
+te opcje nie zadziałąją.
+
+Po przejściu do widoku dla gościa można sfobodnie przemieszczać się pomiędzy zakładkami oraz odnośnikami.
+Niekture z nich prowadzą bezpośrednio do stron zewnętrzynch opisujących zagadnienia lub do dokumentów.
+
+W razie problemu z uruchomieniem strony proszę o kontakt mailowy na adres : 
+kspolska17@stud.umk.pl

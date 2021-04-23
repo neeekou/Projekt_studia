@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>Strona test</title>
+	
+</head>
+<body>
+	
+	Test pobieranie danych z bazy
+
+	<center>
+		
+		<table border ="1">
+
+			<tr>
+				<th> tytuly</th>
+				<th> link</th>
+				
+			</tr>
+			{% for result in data %}
+			<tr>
+				<td>{{result.tytul}}</td>
+				<td ><a href={{result.link}}>link</a> </td>
+			</tr>
+			{% endfor %}
+		 </table>
+
+	</center>
+
+</body>
+</html>
