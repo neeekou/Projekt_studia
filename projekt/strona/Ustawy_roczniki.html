@@ -1,8 +1,6 @@
 {% extends 'main_base.html' %}
 {% block content %}
-
-	
-	<table border ="1">
+		<table border ="1">
 	
 		<thead>
 			<tr>
@@ -12,7 +10,7 @@
 			</tr>
 	
 					{% for result in data %}
-					{% if result.rok == 2020 %}
+					{% if result.rok == rokcznik %}
 			<tr>
 				<td>Dz.U. {{result.rok}} poz. {{result.nr_ustawy}}</td>			
 				<td  ><a href={{result.link}} >link do dokumentu </a> </td>
@@ -24,8 +22,6 @@
 
 		</thead>
 		
-		</table>	
-
-
+		</table>
 {% endblock %}
-	
+		

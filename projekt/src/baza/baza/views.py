@@ -5,6 +5,8 @@ from django.http import HttpResponse
 
 from .forms import Dane_osoba
 
+import numpy as numpy
+
 def home_view(request):
 	 return HttpResponse("Hello!") 
 
@@ -35,44 +37,6 @@ def Omnie(request):
 
 def Kontakt(request):
 	return render(request, "Kontakt.html")
-
-def P_2021(request):
-	results=Ustawy.objects.all()
-	return render(request, "2021.html",{"data":results})
-
-def P_2020(request):
-	results=Ustawy.objects.all()
-	return render(request, "2020.html",{"data":results})
-
-def P_2019(request):
-	results=Ustawy.objects.all()
-	return render(request, "2019.html",{"data":results})
-
-	
-def P_2018(request):
-	results=Ustawy.objects.all()
-	return render(request, "2018.html",{"data":results})
-
-def P_2017(request):
-	results=Ustawy.objects.all()
-	return render(request, "2017.html",{"data":results})
-
-def P_2016(request):
-	results=Ustawy.objects.all()
-	return render(request, "2016.html",{"data":results})
-
-def P_2015(request):
-	results=Ustawy.objects.all()
-	return render(request, "2015.html",{"data":results})
-
-def P_2014(request):
-	results=Ustawy.objects.all()
-	return render(request, "2014.html",{"data":results})
-
-def P_2013(request):
-	results=Ustawy.objects.all()
-	return render(request, "2013.html",{"data":results})
-
 def base(request):
 	form = Dane_osoba()
 	return render(request, "base.html",{"form":form})
@@ -80,7 +44,11 @@ def base(request):
 def post_new(request):
     form = Dane_osoba()
     return render(request, 'base.html', {'form': form})
-
+def rocznik(request , lata):
+	#lata = [ '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020','2021']
+	results=Ustawy.objects.all()
+	#dane_z_bazy = Ustawy.objects.all(numpy.unique(rok = lata))
+	return render(request, 'Ustawy_roczniki.html', {"data":results , "rokcznik":lata})
 #def main_base(request):
 #	return render(request, "main_base.html")
 

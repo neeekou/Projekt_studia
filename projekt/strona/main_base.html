@@ -2,7 +2,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Strona główna</title>
 	<link rel ="stylesheet" href="{% static 'css/style.css' %}" type="text/css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
@@ -11,10 +10,10 @@
 	<form id="lista_ustaw">			
 		<nav class="w3-bar w3-black">
 			<img class="mySlides2" src="{% static 'photo/0.png' %}" style="width:100%">
-			<a href="StronaGlowna" class="w3-button w3-bar-item">Home</a>
-			<a href="Roczniki" class="w3-button w3-bar-item">Rocznmiki</a>
-			<a href="Statystyki" class="w3-button w3-bar-item">Statystyki</a>
-			<a href="Projekt" class="w3-button w3-bar-item">Rozwinięcie projektu</a>
+			<a href="{% url 'home_page' %}" class="w3-button w3-bar-item">Home</a>
+			<a href="{% url 'roczniki' %}" class="w3-button w3-bar-item">Rocznmiki</a>
+			<a href="{% url 'statystyki' %}" class="w3-button w3-bar-item">Statystyki</a>
+			<a href="{% url 'rozwiniecie' %}" class="w3-button w3-bar-item">Rozwinięcie projektu</a>
 		</nav> 			
 		
 {% block content %}
@@ -23,13 +22,13 @@
 
 		<br>
 		<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
-  			<a href="Kontakt">
+  			<a href="{% url 'kontakt' %}">
 				<i class="fa fa-facebook-official">Kontakt</i>
 			</a>
- 			<a href="Omnie">
+ 			<a href="{% url 'omnie' %}">
 				<i class="fa fa-pinterest-p">O mnie</i> 
 			</a>
-  			<a href="Regulamin">
+  			<a href="{% url 'regulamin' %}">
 				<i class="fa fa-twitter">Regulamin</i>
 			</a>
 		</footer>

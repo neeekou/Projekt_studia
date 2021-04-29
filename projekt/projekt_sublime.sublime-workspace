@@ -3,15 +3,50 @@
 	{
 		"selected_items":
 		[
+			[
+				"w",
+				"wynik"
+			],
+			[
+				"m",
+				"main_base"
+			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "strona/Omnie.html",
+			"file": "src/baza/baza/urls.py",
 			"settings":
 			{
-				"buffer_size": 1285,
+				"buffer_size": 2000,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/baza/baza/views.py",
+			"settings":
+			{
+				"buffer_size": 2367,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "strona/rocznik.html",
+			"settings":
+			{
+				"buffer_size": 555,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/baza/baza/models.py",
+			"settings":
+			{
+				"buffer_size": 682,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -52,20 +87,25 @@
 		"/C/Users/Wiktoria/Desktop/django/projekt",
 		"/C/Users/Wiktoria/Desktop/django/projekt/src",
 		"/C/Users/Wiktoria/Desktop/django/projekt/src/baza",
+		"/C/Users/Wiktoria/Desktop/django/projekt/src/baza/baza",
+		"/C/Users/Wiktoria/Desktop/django/projekt/src/baza/baza/static",
 		"/C/Users/Wiktoria/Desktop/django/projekt/src/baza/baza_projekt",
 		"/C/Users/Wiktoria/Desktop/django/projekt/src/baza/strony",
 		"/C/Users/Wiktoria/Desktop/django/projekt/src/baza/strony/__pycache__",
 		"/C/Users/Wiktoria/Desktop/django/projekt/src/baza/strony/migrations",
-		"/C/Users/Wiktoria/Desktop/django/projekt/strona",
-		"/C/Users/Wiktoria/Desktop/django/projekt/strona/background",
-		"/C/Users/Wiktoria/Desktop/django/projekt/strona/photo"
+		"/C/Users/Wiktoria/Desktop/django/projekt/strona"
 	],
 	"file_history":
 	[
-		"/C/Users/Wiktoria/Desktop/django/projekt/src/baza/baza/settings.py",
-		"/C/Users/Wiktoria/Desktop/django/projekt/strona/main_base.html",
+		"/C/Users/Wiktoria/Desktop/django/projekt/src/baza/baza/static/css/style.css",
 		"/C/Users/Wiktoria/Desktop/django/projekt/strona/main_base_page.html",
+		"/C/Users/Wiktoria/Desktop/django/projekt/strona/main_base.html",
+		"/C/Users/Wiktoria/Desktop/django/projekt/strona/rocznik.html",
+		"/C/Users/Wiktoria/Desktop/django/projekt/src/baza/baza/settings.py",
 		"/C/Users/Wiktoria/Desktop/django/projekt/strona/Omnie.html",
+		"/C/Users/Wiktoria/Desktop/django/projekt/strona/Roczniki.html",
+		"/C/Users/Wiktoria/Desktop/django/projekt/src/baza/baza/urls.py",
+		"/C/Users/Wiktoria/Desktop/django/projekt/src/baza/baza/views.py",
 		"/C/Users/Wiktoria/Desktop/django/projekt/strona/photo/b-2.jpg",
 		"/C/Users/Wiktoria/Desktop/django/projekt/strona/Kontakt.html",
 		"/C/Users/Wiktoria/Desktop/django/projekt/strona/Projekt.html",
@@ -76,9 +116,6 @@
 		"/C/Users/Wiktoria/Desktop/django/projekt/strona/2013.html",
 		"/C/Users/Wiktoria/Desktop/django/projekt/src/baza/baza/forms.py",
 		"/C/Users/Wiktoria/Desktop/django/projekt/src/baza/baza/models.py",
-		"/C/Users/Wiktoria/Desktop/django/projekt/strona/Roczniki.html",
-		"/C/Users/Wiktoria/Desktop/django/projekt/src/baza/baza/views.py",
-		"/C/Users/Wiktoria/Desktop/django/projekt/src/baza/baza/urls.py",
 		"/C/Users/Wiktoria/Desktop/django/projekt/strona/2014.html",
 		"/C/Users/Wiktoria/Desktop/django/projekt/strona/2015.html",
 		"/C/Users/Wiktoria/Desktop/django/projekt/strona/2016.html",
@@ -93,7 +130,6 @@
 		"/C/Users/Wiktoria/Desktop/django/projekt/strona/css/style.css",
 		"/C/Users/Wiktoria/Desktop/django/projekt/strona/zakladanie_konta.html",
 		"/C/Users/Wiktoria/Desktop/django/projekt/src/baza/strony/views.py",
-		"/C/Users/Wiktoria/Desktop/django/projekt/src/baza/baza/static/css/style.css",
 		"/C/Users/Wiktoria/Desktop/django/projekt/src/baza/baza/static/style.css",
 		"/C/Users/Wiktoria/Desktop/django/projekt/src/baza/baza_projekt/models.py",
 		"/C/Users/Wiktoria/Desktop/django/projekt/src/baza/baza_projekt/views.py",
@@ -101,7 +137,7 @@
 	],
 	"find":
 	{
-		"height": 41.0
+		"height": 61.0
 	},
 	"find_in_files":
 	{
@@ -115,6 +151,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			")\n",
+			"rocznik.html",
 			"jpg",
 			"BASE_DIR",
 			"name",
@@ -143,19 +181,78 @@
 			[
 				{
 					"buffer": 0,
-					"file": "strona/Omnie.html",
+					"file": "src/baza/baza/urls.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1285,
+						"buffer_size": 2000,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								899,
-								899
+								790,
+								790
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 360.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/baza/baza/views.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2367,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2150,
+								2153
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1426.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "strona/rocznik.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 555,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								299,
+								299
 							]
 						],
 						"settings":
@@ -164,10 +261,39 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 180.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/baza/baza/models.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 682,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								104,
+								107
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -250,7 +376,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 226.0,
+	"side_bar_width": 276.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
