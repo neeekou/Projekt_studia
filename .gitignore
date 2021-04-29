@@ -2,3 +2,4 @@
 /projekt/Lib
 /projekt/Scripts/
 *.pyc
+/vagrant/.vagrant
