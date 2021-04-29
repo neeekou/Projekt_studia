@@ -26,7 +26,7 @@ SECRET_KEY = ')xco!+qehn_e%j!%or5p!uc36&9@308(+os=(c-#r#)!b%s%le'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['192.168.33.10']
 
 
 # Application definition
@@ -58,7 +58,7 @@ ROOT_URLCONF = 'baza.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['C:/Users/Wiktoria/Desktop/django/projekt/strona'],
+        'DIRS': ['/repos/Projekt_studia/projekt/strona'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -81,8 +81,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME':'projekt',
-        'USER': 'postgres',
-        'PASSWORD':'P@Mp3luna',
+        'USER': 'django',
+        'PASSWORD':'changeit',
         'HOST': 'localhost',
         'PORT': '5432'
     }
