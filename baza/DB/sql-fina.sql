@@ -16,7 +16,7 @@ CREATE TABLE "dane_osoba" (
 	"id_osoby" serial NOT NULL,
 	"imie" VARCHAR(30) NOT NULL,
 	"nazwisko" VARCHAR(50) NOT NULL,
-	"Has³o" VARCHAR(50) NOT NULL,
+	"Hasï¿½o" VARCHAR(50) NOT NULL,
 	"data_urodzenia" DATE NOT NULL,
 	"e-mail" VARCHAR(70) NOT NULL,
 	"nr_telefonu" integer NOT NULL,
